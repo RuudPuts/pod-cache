@@ -1,14 +1,143 @@
 PODS:
+  - Bright (1.0.1):
+    - GoogleTagManager
+  - Differentiator (4.0.1)
+  - FacebookSDK (9.1.0):
+    - FacebookSDK/CoreKit (= 9.1.0)
+  - FacebookSDK/CoreKit (9.1.0):
+    - FBSDKCoreKit (~> 9.1.0)
+  - FBSDKCoreKit (9.1.0):
+    - FBSDKCoreKit/Basics (= 9.1.0)
+    - FBSDKCoreKit/Core (= 9.1.0)
+  - FBSDKCoreKit/Basics (9.1.0)
+  - FBSDKCoreKit/Core (9.1.0):
+    - FBSDKCoreKit/Basics
+  - Firebase (6.34.0):
+    - Firebase/Core (= 6.34.0)
+  - Firebase/Core (6.34.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.9.0)
+  - Firebase/CoreOnly (6.34.0):
+    - FirebaseCore (= 6.10.4)
+  - Firebase/Crashlytics (6.34.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 4.6.2)
+  - Firebase/Performance (6.34.0):
+    - Firebase/CoreOnly
+    - FirebasePerformance (~> 3.3.1)
+  - FirebaseABTesting (4.2.0):
+    - FirebaseCore (~> 6.10)
+  - FirebaseAnalytics (6.9.0):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.7)
+    - GoogleAppMeasurement (= 6.9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - FirebaseCore (6.10.4):
+    - FirebaseCoreDiagnostics (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+  - FirebaseCoreDiagnostics (1.7.0):
+    - GoogleDataTransport (~> 7.4)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+    - nanopb (~> 1.30906.0)
+  - FirebaseCrashlytics (4.6.2):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleDataTransport (~> 7.2)
+    - nanopb (~> 1.30906.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseDynamicLinks (4.3.1):
+    - FirebaseCore (~> 6.10)
+  - FirebaseInstallations (1.7.0):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - PromisesObjC (~> 1.2)
+  - FirebasePerformance (3.3.2):
+    - FirebaseCore (~> 6.9)
+    - FirebaseInstallations (~> 1.5)
+    - FirebaseRemoteConfig (~> 4.7)
+    - GoogleDataTransport (~> 7.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/ISASwizzler (~> 6.2)
+    - GoogleUtilities/MethodSwizzler (~> 6.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.12)
+  - FirebaseRemoteConfig (4.9.1):
+    - FirebaseABTesting (~> 4.2)
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+  - GoogleAnalytics (3.17.0)
+  - GoogleAppMeasurement (6.9.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - GoogleDataTransport (7.5.1):
+    - nanopb (~> 1.30906.0)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleTagManager (7.1.4):
+    - FirebaseAnalytics (~> 6.7)
+    - GoogleAnalytics (~> 3.17)
+    - GoogleUtilitiesLegacy (~> 1.3)
+  - GoogleToolboxForMac/Defines (2.3.1)
+  - GoogleToolboxForMac/Logger (2.3.1):
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+  - "GoogleToolboxForMac/NSData+zlib (2.3.1)":
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.7.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/ISASwizzler (6.7.2)
+  - GoogleUtilities/Logger (6.7.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.7.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.7.2)"
+  - GoogleUtilities/Reachability (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilitiesLegacy (1.3.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GTMSessionFetcher/Core (1.5.0)
   - HTMLString (6.0.1)
   - JNetworkingKit (3.0.0)
   - JumboAnalytics (0.1.4):
     - JumboCore
+  - JumboAnalyticsTest (0.1.1):
+    - JumboAnalytics
   - JumboCore (0.2.0):
     - JNetworkingKit (~> 3.0.0)
     - Result (~> 5.0.0)
     - RxCocoa (~> 5.1.0)
     - RxSwift (~> 5.1.0)
     - RxSwiftExt (~> 5.2.0)
+  - JumboCoreTest (0.1.1):
+    - JumboCore
+  - JumboEcom (0.2.0):
+    - JumboAnalytics
+    - JumboCore
+    - JumboUI
+    - RxCocoa (~> 5.1.0)
+    - RxSwift (~> 5.1.0)
   - JumboUI (0.2.0):
     - HTMLString (~> 6.0)
     - JumboAnalytics
@@ -18,13 +147,41 @@ PODS:
     - RxCocoa (~> 5.1.0)
     - RxSwift (~> 5.1.0)
     - SwiftRichString (= 3.0.0)
+  - JumboUITest (0.1.1):
+    - JumboUI
+  - "Keyboard+LayoutGuide (1.6.0)"
   - Kingfisher (4.10.1)
   - lottie-ios (3.1.9)
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
   - Nimble (9.0.0)
+  - OneTrust-CMP-XCFramework (6.12.0.0)
+  - PhoneNumberKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.3)
+    - PhoneNumberKit/UIKit (= 3.3.3)
+  - PhoneNumberKit/PhoneNumberKitCore (3.3.3)
+  - PhoneNumberKit/UIKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - PromisesObjC (1.2.12)
+  - Protobuf (3.15.8)
   - Quick (2.2.1)
+  - ReachabilitySwift (5.0.0)
   - Result (5.0.0)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxReachability (1.1.0):
+    - ReachabilitySwift (~> 5.0)
+    - RxCocoa (~> 5)
     - RxSwift (~> 5)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
@@ -37,66 +194,183 @@ PODS:
   - RxSwiftExt/RxCocoa (5.2.0):
     - RxCocoa (~> 5.0)
     - RxSwiftExt/Core
+  - RxTest (5.1.2):
+    - RxSwift (~> 5)
   - Sourcery (1.3.4)
   - SwiftLint (0.43.1)
   - SwiftRichString (3.0.0)
+  - Usabilla (6.5.0)
 
 DEPENDENCIES:
-  - JumboAnalytics (from `../../JumboAnalytics`)
-  - JumboCore (from `../../JumboCore`)
-  - JumboUI (from `../../JumboUI`)
+  - "Bright (from `git@github.com:jumbo-supermarkten/mobile-bright-ios.git`)"
+  - FacebookSDK (~> 9.0)
+  - Firebase (~> 6.32)
+  - Firebase/Crashlytics
+  - Firebase/Performance
+  - FirebaseDynamicLinks (~> 4.3)
+  - FirebaseRemoteConfig (~> 4.9)
+  - GoogleTagManager (~> 7.1.4)
+  - HTMLString (~> 6.0)
+  - JNetworkingKit (~> 3.0.0)
+  - JumboAnalytics (from `Modules/JumboAnalytics`)
+  - JumboAnalyticsTest (from `Modules/JumboAnalytics`)
+  - JumboCore (from `Modules/JumboCore`)
+  - JumboCoreTest (from `Modules/JumboCore`)
+  - JumboEcom (from `Modules/JumboEcom`)
+  - JumboUI (from `Modules/JumboUI`)
+  - JumboUITest (from `Modules/JumboUI`)
+  - "Keyboard+LayoutGuide (~> 1.6.0)"
+  - Kingfisher (~> 4.10.0)
+  - lottie-ios (~> 3.1.0)
   - Nimble (~> 9.0.0)
+  - OneTrust-CMP-XCFramework (~> 6.12.0.0)
+  - PhoneNumberKit (~> 3.0)
   - Quick (~> 2.2.0)
+  - Result (~> 5.0.0)
+  - RxBlocking (~> 5.1.0)
   - RxCocoa (~> 5.1.0)
+  - RxDataSources (~> 4.0.0)
+  - RxReachability
   - RxSwift (~> 5.1.0)
   - RxSwiftExt (~> 5.2.0)
+  - RxTest (~> 5.1.0)
   - Sourcery
   - SwiftLint
+  - SwiftRichString (= 3.0.0)
+  - Usabilla (~> 6.5.0)
 
 SPEC REPOS:
   trunk:
+    - Differentiator
+    - FacebookSDK
+    - FBSDKCoreKit
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseDynamicLinks
+    - FirebaseInstallations
+    - FirebasePerformance
+    - FirebaseRemoteConfig
+    - GoogleAnalytics
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleSymbolUtilities
+    - GoogleTagManager
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GoogleUtilitiesLegacy
+    - GTMSessionFetcher
     - HTMLString
     - JNetworkingKit
+    - "Keyboard+LayoutGuide"
     - Kingfisher
     - lottie-ios
+    - nanopb
     - Nimble
+    - OneTrust-CMP-XCFramework
+    - PhoneNumberKit
+    - PromisesObjC
+    - Protobuf
     - Quick
+    - ReachabilitySwift
     - Result
+    - RxBlocking
     - RxCocoa
+    - RxDataSources
+    - RxReachability
     - RxRelay
     - RxSwift
     - RxSwiftExt
+    - RxTest
     - Sourcery
     - SwiftLint
     - SwiftRichString
+    - Usabilla
 
 EXTERNAL SOURCES:
+  Bright:
+    :git: "git@github.com:jumbo-supermarkten/mobile-bright-ios.git"
   JumboAnalytics:
-    :path: "../../JumboAnalytics"
+    :path: Modules/JumboAnalytics
+  JumboAnalyticsTest:
+    :path: Modules/JumboAnalytics
   JumboCore:
-    :path: "../../JumboCore"
+    :path: Modules/JumboCore
+  JumboCoreTest:
+    :path: Modules/JumboCore
+  JumboEcom:
+    :path: Modules/JumboEcom
   JumboUI:
-    :path: "../../JumboUI"
+    :path: Modules/JumboUI
+  JumboUITest:
+    :path: Modules/JumboUI
+
+CHECKOUT OPTIONS:
+  Bright:
+    :commit: cd755c96766614d4ee7895bbfd7780d589af11a7
+    :git: "git@github.com:jumbo-supermarkten/mobile-bright-ios.git"
 
 SPEC CHECKSUMS:
+  Bright: 7790fa39b1e40df50c9436952101b98cab1aec9b
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FacebookSDK: bfb786cb4d1ca541b81c8f39b8c2fd0a8a2a227b
+  FBSDKCoreKit: a00fe2efd780c195a5e09201bf51c56106245b40
+  Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
+  FirebaseABTesting: 8a9d8df3acc2b43f4a22014ddf9f601bca6af699
+  FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
+  FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
+  FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
+  FirebaseCrashlytics: 1a747c9cc084a24dc6d9511c991db1cd078154eb
+  FirebaseDynamicLinks: 6eac37d86910382eafb6315d952cc44c9e176094
+  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
+  FirebasePerformance: 34de2b03ddfddbca26a716468a50877fd065fbe5
+  FirebaseRemoteConfig: 35a729305f254fb15a2e541d4b36f3a379da7fdc
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
+  GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleTagManager: 9e7aa92603b3101fcc86f761c927ddd6f4c26c0e
+  GoogleToolboxForMac: 471e0c05d39506e50e6398f46fa9a12ae0efeff9
+  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
+  GoogleUtilitiesLegacy: 5501bedec1646bd284286eb5fc9453f7e23a12f4
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   HTMLString: 4abe8cbe94660b328bbe4fc014dabdf0481b16a7
   JNetworkingKit: 7031e10c116d0ded91b4b60dc8871e2785e13481
   JumboAnalytics: 02221445f5cd3ca5c62c8fd42c495962090b837a
+  JumboAnalyticsTest: 204b9e852910ee5c548d6de88bd1f0678c5f0445
   JumboCore: aea3d0b7568ebaa3f23fd88173666f6e07cb4688
+  JumboCoreTest: 1d9825a4a80280ce841c0555859af152e0b75564
+  JumboEcom: 303f60fd34573569bd994e90f346b38be9ef9bc9
   JumboUI: 52f65a360c53e71cde3a34b394c1c9439fc5afcb
+  JumboUITest: 2ce1165d9c3d518f5273ccab67d0b92238ce68e7
+  "Keyboard+LayoutGuide": db44b1764e2bb5d9824cc9cea9d9006cd4442045
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+  OneTrust-CMP-XCFramework: d621433413371965247ced6324680ca3fa5efc8a
+  PhoneNumberKit: 4ce83273551c4d2ae10b7361162f4283dd02835f
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Protobuf: adb85cd18a15bd1a777c158af9fd6e612a0e6d69
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxReachability: 3da1c23ba6d93dabc004290cda61dd9e7884422d
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  RxTest: 274549b747dca56f47c52c8991ec5cf797ecfe40
   Sourcery: 1b5b0f816fbed6d0c7c066786fff4074e470e796
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   SwiftRichString: 5cb4860df3dc8e4d9087d7b948b210177342c3da
+  Usabilla: 425b78ee09659fdaa420a09d0d89d91c7aed8608
 
-PODFILE CHECKSUM: 14c684410843ca782219e3b48d8759bb60bbb60c
+PODFILE CHECKSUM: 9e0bd2daf2330456efeb2a3faee38bb085747020
 
 COCOAPODS: 1.10.1
