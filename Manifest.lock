@@ -202,7 +202,7 @@ PODS:
   - Usabilla (6.5.0)
 
 DEPENDENCIES:
-  - Bright (from `Modules/Bright`)
+  - "Bright (from `git@github.com:jumbo-supermarkten/mobile-bright-ios.git`)"
   - FacebookSDK (~> 9.0)
   - Firebase (~> 6.32)
   - Firebase/Crashlytics
@@ -292,7 +292,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Bright:
-    :path: Modules/Bright
+    :git: "git@github.com:jumbo-supermarkten/mobile-bright-ios.git"
   JumboAnalytics:
     :path: Modules/JumboAnalytics
   JumboAnalyticsTest:
@@ -307,6 +307,11 @@ EXTERNAL SOURCES:
     :path: Modules/JumboUI
   JumboUITest:
     :path: Modules/JumboUI
+
+CHECKOUT OPTIONS:
+  Bright:
+    :commit: cd755c96766614d4ee7895bbfd7780d589af11a7
+    :git: "git@github.com:jumbo-supermarkten/mobile-bright-ios.git"
 
 SPEC CHECKSUMS:
   Bright: 7790fa39b1e40df50c9436952101b98cab1aec9b
@@ -366,6 +371,6 @@ SPEC CHECKSUMS:
   SwiftRichString: 5cb4860df3dc8e4d9087d7b948b210177342c3da
   Usabilla: 425b78ee09659fdaa420a09d0d89d91c7aed8608
 
-PODFILE CHECKSUM: 1414460d77c7a520c28186e9b12aa6c55585e107
+PODFILE CHECKSUM: d3a7e52eefde4195b0449fd7d3fc9ff1c2cf1685
 
 COCOAPODS: 1.10.1
