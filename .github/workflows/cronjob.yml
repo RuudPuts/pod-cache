@@ -18,10 +18,10 @@ jobs:
           LAST_COMMIT_TIMESTAMP=$(git show -s --format=%ct) \
           NOW_TIMESTAMP=$(date +%s) \
           TIME_SINCE_LAST_COMMIT=`expr $NOW_TIMESTAMP - $LAST_COMMIT_TIMESTAMP` \
-          \
-          if [ $TIME_SINCE_LAST_COMMIT -gt 86400 ]; \
-          then \
-            echo "Should run!" \
-          else \
-            echo "No changes since last day!" \
-          fi
+          if [ $TIME_SINCE_LAST_COMMIT -lt 86400 ]; then echo ::set-env name=SHOULD_RUN::true; fi
+      - name: Be happy
+        if: env.SHOULD_RUN == 'true'
+        run: echo "HAPPY! 🔥"
+      - name: Not happy
+        if: env.SHOULD_RUN != 'true'
+        run: echo "NOT HAPPY! 🐝"
