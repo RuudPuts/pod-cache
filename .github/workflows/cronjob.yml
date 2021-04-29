@@ -19,8 +19,11 @@ jobs:
           NOW_TIMESTAMP=$(date +%s) \
           TIME_SINCE_LAST_COMMIT=`expr $NOW_TIMESTAMP - $LAST_COMMIT_TIMESTAMP` \
           echo "LAST_COMMIT_TIMESTAMP: $LAST_COMMIT_TIMESTAMP" \
+          echo "" \
           echo "NOW_TIMESTAMP: $NOW_TIMESTAMP" \
-          echo "TIME_SINCE_LAST_COMMIT: $TIME_SINCE_LAST_COMMIT"
+          echo "" \
+          echo "TIME_SINCE_LAST_COMMIT: $TIME_SINCE_LAST_COMMIT" \
+          echo "" \
       - name: Be happy
         if: env.SHOULD_RUN == 'true'
         run: echo "HAPPY! 🔥"
