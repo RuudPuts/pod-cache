@@ -10,5 +10,14 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Git log
-        run: git log
+      - name: Check if changed in last 24 hrs
+        run: |
+          LAST_COMMIT_TIMESTAMP=$(git show -s --format=%ct) \
+          NOW_TIMESTAMP=$(date +%s) \
+          TIME_SINCE_LAST_COMMIT=`expr $NOW_TIMESTAMP - $LAST_COMMIT_TIMESTAMP` \
+          \
+          if [ $TIME_SINCE_LAST_COMMIT -gt 86400 ]; then \
+            echo "Should run!" \
+          else \
+            echo "No changes since last day!" \
+          fi
