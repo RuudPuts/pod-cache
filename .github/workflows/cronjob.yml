@@ -1,0 +1,13 @@
+name: Create our Weekly Meeting notes issue
+on:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  cron-task:
+    name: Cron task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Git log
+        run: git log
